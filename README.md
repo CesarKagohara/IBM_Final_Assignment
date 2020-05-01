@@ -11,3 +11,5 @@ As a support to the new and small restaurant, a map will be created displaying t
 The Data will be collected using the Foursquare API. 
 First, collect locations in the Food category within 10,000 meters of my home using the regular call explore endpoint (Foursquare API). With this list, split the "venue.id" column and use them to use a premium call to collect all details from the restaurants in a loop and append in a data frame. In this data frame, we can sort the venues with low likes. As part of Foursquare API, it'll provide all coordinates of the venues.
 The Python Folium module will be used to create a map with each restaurant with name, address, category (Pizza, Hamburger, etc..), Rating and Foursquare link.
+
+![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/map.PNG)

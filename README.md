@@ -12,4 +12,13 @@ The Data will be collected using the Foursquare API.
 First, collect locations in the Food category within 10,000 meters of my home using the regular call explore endpoint (Foursquare API). With this list, split the "venue.id" column and use them to use a premium call to collect all details from the restaurants in a loop and append in a data frame. In this data frame, we can sort the venues with low likes. As part of Foursquare API, it'll provide all coordinates of the venues.
 The Python Folium module will be used to create a map with each restaurant with name, address, category (Pizza, Hamburger, etc..), Rating and Foursquare link.
 
+
+Exploratory Data Analysis
+The Foursquare API has the endpoint called "explore". In this regular endpoint, I have used 4 parameters, the first is the "ll" to register the my current location(latitude and longitude), categoryId to get the "Food" category, radius to define the maximum distance and the results limits. The Foursquare have returned a Json file and using the Json and Requests libraries, the file was modified to a Dataframe as you can see below the example with 1 row in transpose mode:
+![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/Foursquare_Regular.PNG)
+
+With this dataframe above, just the venueID was used as parameter to the Foursquare premium call to collect the details one by one, as you can see in the example below:
+![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/Foursquare_Premium.PNG)
+
+For this example, I have used the venues with less than 10 likes and returned a bunch of restaurants. With this data, the Folium library was used to create and add markers in the maps with some details of the elected restaurants, as you can see below:
 ![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/map.PNG)

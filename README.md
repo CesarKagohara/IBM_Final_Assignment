@@ -23,3 +23,13 @@ With this dataframe above, just the venueID was used as parameter to the Foursqu
 
 For this example, I have used the venues with less than 10 likes and returned a bunch of restaurants. With this data, the Folium library was used to create and add markers in the maps with some details of the elected restaurants, as you can see below:<br>
 ![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/map.PNG)
+
+
+<h3>Results section where you discuss the results.</h3>
+According to the notebook created, We can create an application to support our local business during the pandemic of Covid-19. Find a restaurant that doesn't have visibility and highlight them.
+
+<h3>Discussion</h3>
+The Foursquare API is very useful to explore any venue around the world using address or latitude/longitude. Depending on the choose location, sometimes the venue details are not accurate, due to missing recent updates. It'll depend on the popularity of the Foursquare in the Country.
+
+<h3>Conclusion</h3>
+Using data science, we can help each others exploring many API around the internet. During this pandemic, it'll be very helpful for some people that don't have conditions to understand the impact of Covid-19 on their business. The world is changing and We're here to understand thought the data, where the business should go.

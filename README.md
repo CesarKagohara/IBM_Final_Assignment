@@ -13,7 +13,7 @@ First, collect locations in the Food category within 10,000 meters of my home us
 The Python Folium module will be used to create a map with each restaurant with name, address, category (Pizza, Hamburger, etc..), Rating and Foursquare link.
 
 
-Exploratory Data Analysis
+<h4> Exploratory Data Analysis <h4>
 The Foursquare API has the endpoint called "explore". In this regular endpoint, I have used 4 parameters, the first is the "ll" to register the my current location(latitude and longitude), categoryId to get the "Food" category, radius to define the maximum distance and the results limits. The Foursquare have returned a Json file and using the Json and Requests libraries, the file was modified to a Dataframe as you can see below the example with 1 row in transpose mode:<br>
 ![Imgur Image](https://raw.githubusercontent.com/CesarKagohara/IBM_Final_Assignment/master/images/Foursquare_Regular.PNG)
 
